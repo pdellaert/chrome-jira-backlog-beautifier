@@ -1,0 +1,19 @@
+{
+  "name": "Jira Backlog Status Beautifier",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "description": "Beautifies the status in the Jira backlog view by moving it next to the Fix Version and Epic labels and condenses the view if possible.",
+  "permissions": [
+    "https://*/secure/RapidBoard.jspa*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*/secure/RapidBoard.jspa*"
+      ],
+      "js": [
+        "inject.js"
+      ]
+    }
+  ]
+}
